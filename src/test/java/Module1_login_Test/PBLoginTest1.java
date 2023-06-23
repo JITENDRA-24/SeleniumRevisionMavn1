@@ -9,7 +9,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
 import LibraryFiles.BaseClass;
 import LibraryFiles.UtilityClass;
@@ -30,6 +35,20 @@ public class PBLoginTest1 extends BaseClass
 	PBProfilePage profile;
 	int TCID;
 	
+	static ExtentTest test;
+	static ExtentHtmlReporter reporter;
+
+//	@parameters ("browser")
+	@BeforeTest
+	public void extentreportBeforeTest ( ) {
+
+	reporter = new ExtentHtmlReporter ("test—output/ExtentReport/Extent.html");
+	ExtentReports extent = new ExtentReports ( ) ;
+	extent.attachReporter(reporter);
+
+	System.out.println("Before Test");
+	}
+
 	
 	@BeforeClass
 	public void openBrowser() throws EncryptedDocumentException, IOException
@@ -82,7 +101,8 @@ public class PBLoginTest1 extends BaseClass
 	@AfterClass
 	public void closeBrowser()
 	{
-		driver.quit();
+		//driver.quit();
 	}
+	
 
 }
