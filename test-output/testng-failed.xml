@@ -4,18 +4,18 @@
   <listeners>
     <listener class-name="extentReport.ExtentTestNGIReporterListener"/>
   </listeners>
-  <test thread-count="5" name="Module1(failed)">
+  <test thread-count="5" name="Module2(failed)">
     <classes>
-      <class name="Module1_login_Test.PBLoginTest1">
+      <class name="Module1_login_Test.PBContactsDetailsVerification">
         <methods>
+          <include name="name"/>
+          <include name="verifyEmail"/>
+          <include name="loginToApp1"/>
           <include name="extentreportBeforeTest"/>
           <include name="closeBrowser"/>
-          <include name="name"/>
-          <include name="loginToApp"/>
-          <include name="verifyFullName"/>
-          <include name="openBrowser"/>
+          <include name="openBrowser1"/>
         </methods>
-      </class> <!-- Module1_login_Test.PBLoginTest1 -->
+      </class> <!-- Module1_login_Test.PBContactsDetailsVerification -->
     </classes>
-  </test> <!-- Module1(failed) -->
+  </test> <!-- Module2(failed) -->
 </suite> <!-- Failed suite [RegressionSuite] -->

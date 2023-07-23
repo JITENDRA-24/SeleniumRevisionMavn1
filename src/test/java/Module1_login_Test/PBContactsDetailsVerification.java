@@ -11,6 +11,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -24,21 +25,23 @@ import Module1_Login.PBMobNumPage;
 import Module1_Login.PBMyAccPage;
 import Module1_Login.PBProfilePage;
 import Module1_Login.PBPwdPage;
+import Module2Contact.PBContactDetailsM;
 
-public class PBLoginTest1 extends BaseClass
-{
+public class PBContactsDetailsVerification extends BaseClass {
 	PBLoginPage login;
 	PBMobNumPage mobNum;
 	PBPwdPage pwd;
 	PBHomePage home;
 	PBMyAccPage myAcc;
 	PBProfilePage profile;
+	PBContactDetailsM  contactDetails;
+	SoftAssert soft;
 	int TCID;
 	
 	static ExtentTest test;
 	static ExtentHtmlReporter reporter;
 
-//	@parameters ("browser")
+
 	@BeforeTest
 	public void extentreportBeforeTest ( ) {
 
@@ -47,11 +50,10 @@ public class PBLoginTest1 extends BaseClass
 	extent.attachReporter(reporter);
 
 	System.out.println("Before Test");
-	}
-
+	}	
 	
 	@BeforeClass
-	public void openBrowser() throws EncryptedDocumentException, IOException
+	public void openBrowser1() throws EncryptedDocumentException, IOException
 	{
 		initializeBrowser();
 		 login=new PBLoginPage(driver);
@@ -60,50 +62,67 @@ public class PBLoginTest1 extends BaseClass
 		 home=new PBHomePage(driver);
 		 myAcc=new PBMyAccPage(driver);
 		 profile=new PBProfilePage(driver);
+		 contactDetails = new PBContactDetailsM(driver);
+		 soft = new SoftAssert();
 	}
 	
 	@BeforeMethod
-	public void loginToApp() throws InterruptedException, EncryptedDocumentException, IOException
+	public void loginToApp1() throws InterruptedException, EncryptedDocumentException, IOException
 	{
 		login.clickPBLoginPageSignIN();
 		mobNum.inpPBMobNumPageMobNum(UtilityClass.getPFData("mobNum"));
 		mobNum.clickPBMobNumPageSignInWithPwd();
 		pwd.inpPBPwdPagePWD(UtilityClass.getPFData("pwd"));
 		pwd.clickPBPwdPageSignIn();
-		Thread.sleep(3000);
-	}
-	
-	
-	@Test
-	public void verifyFullName() throws InterruptedException, EncryptedDocumentException, IOException 
-	{
-		TCID=101;
-		home.openDDOptionPBHomePageMyAcc();
 		Thread.sleep(2000);
+		home.openDDOptionPBHomePageMyAcc();
+		Thread.sleep(3000);
 		myAcc.clickPBMyAccPageMyProfile();
 		profile.switchToSwitchChildWindow();
 		
-		String actFullName=profile.getPBProfilePageFullName();
-		String expFullName=UtilityClass.getTestData(0, 0);
-		Assert.assertEquals(actFullName, expFullName, "Failed: both names are diff- ");
-	   Thread.sleep(2000);
+		
+	}
+	
+	@Test (priority=1)
+	public void verifyMobNumber() throws InterruptedException, EncryptedDocumentException, IOException 
+	{
+		TCID=1001;
+		contactDetails.clickOnContactDetails();
+		String actMobNumber = contactDetails.actualmobNumber();
+	   String expMobNumber = UtilityClass.getTestData(1, 0);
+	   soft.assertEquals(actMobNumber, expMobNumber, "Failed: both names are diff- ");
+	   
+	   Thread.sleep(3000);
+	}
+	@Test (priority=2)
+	public void verifyEmail() throws InterruptedException, EncryptedDocumentException, IOException 
+	{
+		TCID=1002;
+		contactDetails.clickOnContactDetails();
+		String actEmail = contactDetails.actualemail();
+	   String exEmail = UtilityClass.getTestData(2, 0);
+	   soft.assertEquals(actEmail, exEmail, "Failed: both names are diff- ");
+	   
+	   Thread.sleep(1000);
 	}
 	
 	@AfterMethod
-	public void name(ITestResult s1) throws IOException 
+	public void name(ITestResult s1) throws IOException, InterruptedException 
 	{
 		if(s1.getStatus()==ITestResult.FAILURE)
 		{
 			UtilityClass.captureSS(driver, TCID);
-		}		
+		}	
+		Thread.sleep(2000);
+		contactDetails.clickonLogout();
 	}
-	
-	
+
 	@AfterClass
 	public void closeBrowser()
 	{
 		driver.quit();
 	}
 	
-
+	
+	
 }

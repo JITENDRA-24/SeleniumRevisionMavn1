@@ -5,14 +5,19 @@
 <listeners>
   <listener class-name="extentReport.ExtentTestNGIReporterListener"/>
  </listeners>
-
+ 
   <test  name="Module1">
     <classes>
       <class name="Module1_login_Test.PBLoginTest1"/>
     </classes>
   </test> <!-- Test -->
   
-   
+  <test  name="Module2">
+    <classes>
+      <class name="Module1_login_Test.PBContactsDetailsVerification"/>
+    </classes>
+  </test> <!-- Test -->
+    
    
   
   
