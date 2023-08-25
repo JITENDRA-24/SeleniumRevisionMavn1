@@ -3,10 +3,13 @@ package Module1_login_Test;
 import java.io.IOException;
 
 import org.apache.poi.EncryptedDocumentException;
+import org.apache.xmlbeans.impl.xb.xsdschema.Public;
 import org.testng.Assert;
 import org.testng.ITestResult;
+import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
@@ -50,6 +53,7 @@ public class PBContactsDetailsVerification extends BaseClass {
 	extent.attachReporter(reporter);
 
 	System.out.println("Before Test");
+//	Reporter.log("Before Test", true)
 	}	
 	
 	@BeforeClass
@@ -79,8 +83,6 @@ public class PBContactsDetailsVerification extends BaseClass {
 		Thread.sleep(3000);
 		myAcc.clickPBMyAccPageMyProfile();
 		profile.switchToSwitchChildWindow();
-		
-		
 	}
 	
 	@Test (priority=1)
@@ -115,12 +117,19 @@ public class PBContactsDetailsVerification extends BaseClass {
 		}	
 		Thread.sleep(2000);
 		contactDetails.clickonLogout();
+		Thread.sleep(1000);
+		contactDetails.clickOnHomePage();
 	}
 
 	@AfterClass
 	public void closeBrowser()
 	{
 		driver.quit();
+	}
+	
+	@AfterTest
+	public void clean() {
+		System.gc();
 	}
 	
 	

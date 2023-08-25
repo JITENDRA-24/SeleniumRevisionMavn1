@@ -26,9 +26,9 @@ public class PBProfilePage
 		Set<String> allIds = driver1.getWindowHandles();
 		ArrayList<String> al=new ArrayList<String>(allIds);
 		driver1.switchTo().window(al.get(1));
+		driver1.switchTo().window(al.get(0)).close();
+		driver1.switchTo().window(al.get(1));
 	}
-	
-	
 	
 	public String getPBProfilePageFullName() 
 	{

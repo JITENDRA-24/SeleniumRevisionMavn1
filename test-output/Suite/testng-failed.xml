@@ -9,9 +9,11 @@
       <class name="Module1_login_Test.PBContactsDetailsVerification">
         <methods>
           <include name="name"/>
+          <include name="clean"/>
           <include name="verifyEmail"/>
           <include name="loginToApp1"/>
           <include name="extentreportBeforeTest"/>
+          <include name="verifyMobNumber"/>
           <include name="closeBrowser"/>
           <include name="openBrowser1"/>
         </methods>

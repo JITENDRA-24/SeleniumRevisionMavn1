@@ -11,6 +11,8 @@ public class PBContactDetailsM {
 	@FindBy(xpath="(//input[@type='text'])[1]") private WebElement mobNumber;
 	@FindBy(xpath="(//input[@type='text'])[2]") private WebElement email;
 	@FindBy(xpath="//div[@title='Logout']") private WebElement logout;
+	@FindBy(xpath="//div[@class='sc-gGBfsJ eBYNEi']/a") private WebElement home;
+	
 	public PBContactDetailsM (WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
@@ -28,7 +30,9 @@ public class PBContactDetailsM {
 	String actualEmail = email.getAttribute("value");
 	return actualEmail;
 	}
-	
+	public void clickOnHomePage() {
+	home.click();	
+	}
 	public void clickonLogout() {
 		logout.click();
 	}
