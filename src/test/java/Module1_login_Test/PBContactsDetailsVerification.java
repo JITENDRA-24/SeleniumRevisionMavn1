@@ -52,13 +52,14 @@ public class PBContactsDetailsVerification extends BaseClass {
 	ExtentReports extent = new ExtentReports ( ) ;
 	extent.attachReporter(reporter);
 
-	System.out.println("Before Test");
-//	Reporter.log("Before Test", true)
+	//System.out.println("Before Test");
+	Reporter.log("Before Test", true);
 	}	
 	
 	@BeforeClass
 	public void openBrowser1() throws EncryptedDocumentException, IOException
 	{
+		Reporter.log("Before Class Start", true);
 		initializeBrowser();
 		 login=new PBLoginPage(driver);
 		 mobNum=new PBMobNumPage(driver);
@@ -73,6 +74,7 @@ public class PBContactsDetailsVerification extends BaseClass {
 	@BeforeMethod
 	public void loginToApp1() throws InterruptedException, EncryptedDocumentException, IOException
 	{
+		Reporter.log("Before Method Start", true);
 		login.clickPBLoginPageSignIN();
 		mobNum.inpPBMobNumPageMobNum(UtilityClass.getPFData("mobNum"));
 		mobNum.clickPBMobNumPageSignInWithPwd();
@@ -88,6 +90,7 @@ public class PBContactsDetailsVerification extends BaseClass {
 	@Test (priority=1)
 	public void verifyMobNumber() throws InterruptedException, EncryptedDocumentException, IOException 
 	{
+		Reporter.log("Test1 Execution", true);
 		TCID=1001;
 		contactDetails.clickOnContactDetails();
 		String actMobNumber = contactDetails.actualmobNumber();
@@ -99,6 +102,7 @@ public class PBContactsDetailsVerification extends BaseClass {
 	@Test (priority=2)
 	public void verifyEmail() throws InterruptedException, EncryptedDocumentException, IOException 
 	{
+		Reporter.log("Test2 Execution", true);
 		TCID=1002;
 		contactDetails.clickOnContactDetails();
 		String actEmail = contactDetails.actualemail();
@@ -111,6 +115,7 @@ public class PBContactsDetailsVerification extends BaseClass {
 	@AfterMethod
 	public void name(ITestResult s1) throws IOException, InterruptedException 
 	{
+		Reporter.log("After Method running", true);
 		if(s1.getStatus()==ITestResult.FAILURE)
 		{
 			UtilityClass.captureSS(driver, TCID);
@@ -124,11 +129,13 @@ public class PBContactsDetailsVerification extends BaseClass {
 	@AfterClass
 	public void closeBrowser()
 	{
+		Reporter.log("closing Browser", true);
 		driver.quit();
 	}
 	
 	@AfterTest
 	public void clean() {
+		Reporter.log("After test Execute", true);
 		System.gc();
 	}
 	

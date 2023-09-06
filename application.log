@@ -1,0 +1,44 @@
+2023-09-06 11:21:32,315 DEBUG [main] cache:45 - Couldn't find template in cache for "index.ftl"("en", UTF-8, parsed); will try to load it.
+2023-09-06 11:21:32,320 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("index_en.ftl"): Not found
+2023-09-06 11:21:32,323 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("index.ftl"): Found
+2023-09-06 11:21:32,324 DEBUG [main] cache:45 - Loading template for "index.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Shree/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/index.ftl"
+2023-09-06 11:21:32,573 DEBUG [main] cache:45 - Couldn't find template in cache for "head.ftl"("en", UTF-8, parsed); will try to load it.
+2023-09-06 11:21:32,574 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("head_en.ftl"): Not found
+2023-09-06 11:21:32,576 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("head.ftl"): Found
+2023-09-06 11:21:32,576 DEBUG [main] cache:45 - Loading template for "head.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Shree/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/head.ftl"
+2023-09-06 11:21:32,582 DEBUG [main] cache:45 - Couldn't find template in cache for "nav.ftl"("en", UTF-8, parsed); will try to load it.
+2023-09-06 11:21:32,583 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("nav_en.ftl"): Not found
+2023-09-06 11:21:32,584 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("nav.ftl"): Found
+2023-09-06 11:21:32,585 DEBUG [main] cache:45 - Loading template for "nav.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Shree/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/nav.ftl"
+2023-09-06 11:21:32,596 DEBUG [main] cache:45 - Couldn't find template in cache for "test-view/test-view.ftl"("en", UTF-8, parsed); will try to load it.
+2023-09-06 11:21:32,597 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("test-view/test-view_en.ftl"): Not found
+2023-09-06 11:21:32,599 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("test-view/test-view.ftl"): Found
+2023-09-06 11:21:32,600 DEBUG [main] cache:45 - Loading template for "test-view/test-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Shree/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/test-view/test-view.ftl"
+2023-09-06 11:21:32,621 DEBUG [main] cache:45 - Couldn't find template in cache for "test-view/standard.ftl"("en", UTF-8, parsed); will try to load it.
+2023-09-06 11:21:32,622 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("test-view/standard_en.ftl"): Not found
+2023-09-06 11:21:32,623 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("test-view/standard.ftl"): Found
+2023-09-06 11:21:32,624 DEBUG [main] cache:45 - Loading template for "test-view/standard.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Shree/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/test-view/standard.ftl"
+2023-09-06 11:21:32,648 DEBUG [main] cache:45 - Couldn't find template in cache for "test-view/test-view-charts.ftl"("en", UTF-8, parsed); will try to load it.
+2023-09-06 11:21:32,648 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("test-view/test-view-charts_en.ftl"): Not found
+2023-09-06 11:21:32,649 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("test-view/test-view-charts.ftl"): Found
+2023-09-06 11:21:32,649 DEBUG [main] cache:45 - Loading template for "test-view/test-view-charts.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Shree/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/test-view/test-view-charts.ftl"
+2023-09-06 11:21:32,658 DEBUG [main] cache:45 - Couldn't find template in cache for "category-view/category-view.ftl"("en", UTF-8, parsed); will try to load it.
+2023-09-06 11:21:32,659 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("category-view/category-view_en.ftl"): Not found
+2023-09-06 11:21:32,660 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("category-view/category-view.ftl"): Found
+2023-09-06 11:21:32,661 DEBUG [main] cache:45 - Loading template for "category-view/category-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Shree/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/category-view/category-view.ftl"
+2023-09-06 11:21:32,666 DEBUG [main] cache:45 - Couldn't find template in cache for "author-view/author-view.ftl"("en", UTF-8, parsed); will try to load it.
+2023-09-06 11:21:32,667 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("author-view/author-view_en.ftl"): Not found
+2023-09-06 11:21:32,668 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("author-view/author-view.ftl"): Found
+2023-09-06 11:21:32,669 DEBUG [main] cache:45 - Loading template for "author-view/author-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Shree/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/author-view/author-view.ftl"
+2023-09-06 11:21:32,673 DEBUG [main] cache:45 - Couldn't find template in cache for "exception-view/exception-view.ftl"("en", UTF-8, parsed); will try to load it.
+2023-09-06 11:21:32,674 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("exception-view/exception-view_en.ftl"): Not found
+2023-09-06 11:21:32,675 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("exception-view/exception-view.ftl"): Found
+2023-09-06 11:21:32,676 DEBUG [main] cache:45 - Loading template for "exception-view/exception-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Shree/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/exception-view/exception-view.ftl"
+2023-09-06 11:21:32,684 DEBUG [main] cache:45 - Couldn't find template in cache for "dashboard-view/dashboard-view.ftl"("en", UTF-8, parsed); will try to load it.
+2023-09-06 11:21:32,685 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("dashboard-view/dashboard-view_en.ftl"): Not found
+2023-09-06 11:21:32,686 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("dashboard-view/dashboard-view.ftl"): Found
+2023-09-06 11:21:32,687 DEBUG [main] cache:45 - Loading template for "dashboard-view/dashboard-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Shree/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/dashboard-view/dashboard-view.ftl"
+2023-09-06 11:21:32,696 DEBUG [main] cache:45 - Couldn't find template in cache for "logs-view/testrunner-logs-view.ftl"("en", UTF-8, parsed); will try to load it.
+2023-09-06 11:21:32,708 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view_en.ftl"): Not found
+2023-09-06 11:21:32,710 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view.ftl"): Found
+2023-09-06 11:21:32,711 DEBUG [main] cache:45 - Loading template for "logs-view/testrunner-logs-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Shree/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/logs-view/testrunner-logs-view.ftl"

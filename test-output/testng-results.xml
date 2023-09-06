@@ -1,67 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-25T10:18:04 IST" name="Default suite" finished-at="2023-08-25T10:19:18 IST" duration-ms="74241">
+  <suite started-at="2023-09-06T11:20:53 IST" name="RegressionSuite" finished-at="2023-09-06T11:21:32 IST" duration-ms="38916">
     <groups>
     </groups>
-    <test started-at="2023-08-25T10:18:04 IST" name="Default test" finished-at="2023-08-25T10:19:18 IST" duration-ms="74241">
-      <class name="Module1_login_Test.PBContactsDetailsVerification">
-        <test-method is-config="true" signature="extentreportBeforeTest()[pri:0, instance:Module1_login_Test.PBContactsDetailsVerification@42a48628]" started-at="2023-08-25T10:18:04 IST" name="extentreportBeforeTest" finished-at="2023-08-25T10:18:05 IST" duration-ms="402" status="PASS">
+    <test started-at="2023-09-06T11:20:53 IST" name="Module1" finished-at="2023-09-06T11:21:32 IST" duration-ms="38916">
+      <class name="Module1_login_Test.PBLoginTest1">
+        <test-method is-config="true" signature="extentreportBeforeTest()[pri:0, instance:Module1_login_Test.PBLoginTest1@1a482e36]" started-at="2023-09-06T11:20:53 IST" name="extentreportBeforeTest" finished-at="2023-09-06T11:20:53 IST" duration-ms="354" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- extentreportBeforeTest -->
-        <test-method is-config="true" signature="openBrowser1()[pri:0, instance:Module1_login_Test.PBContactsDetailsVerification@42a48628]" started-at="2023-08-25T10:18:05 IST" name="openBrowser1" finished-at="2023-08-25T10:18:16 IST" duration-ms="11824" status="PASS">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:Module1_login_Test.PBLoginTest1@1a482e36]" started-at="2023-09-06T11:20:53 IST" name="openBrowser" finished-at="2023-09-06T11:21:11 IST" duration-ms="18034" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openBrowser1 -->
-        <test-method is-config="true" signature="loginToApp1()[pri:0, instance:Module1_login_Test.PBContactsDetailsVerification@42a48628]" started-at="2023-08-25T10:18:17 IST" name="loginToApp1" finished-at="2023-08-25T10:18:32 IST" duration-ms="15003" status="PASS">
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="loginToApp()[pri:0, instance:Module1_login_Test.PBLoginTest1@1a482e36]" started-at="2023-09-06T11:21:11 IST" name="loginToApp" finished-at="2023-09-06T11:21:19 IST" duration-ms="8007" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginToApp1 -->
-        <test-method signature="verifyMobNumber()[pri:1, instance:Module1_login_Test.PBContactsDetailsVerification@42a48628]" started-at="2023-08-25T10:18:32 IST" name="verifyMobNumber" finished-at="2023-08-25T10:18:42 IST" duration-ms="10260" status="PASS">
+        </test-method> <!-- loginToApp -->
+        <test-method signature="verifyFullName()[pri:0, instance:Module1_login_Test.PBLoginTest1@1a482e36]" started-at="2023-09-06T11:21:19 IST" name="verifyFullName" finished-at="2023-09-06T11:21:31 IST" duration-ms="11984" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyMobNumber -->
-        <test-method is-config="true" signature="name(org.testng.ITestResult)[pri:0, instance:Module1_login_Test.PBContactsDetailsVerification@42a48628]" started-at="2023-08-25T10:18:42 IST" name="name" finished-at="2023-08-25T10:18:48 IST" duration-ms="6591" status="PASS">
+        </test-method> <!-- verifyFullName -->
+        <test-method is-config="true" signature="name(org.testng.ITestResult)[pri:0, instance:Module1_login_Test.PBLoginTest1@1a482e36]" started-at="2023-09-06T11:21:31 IST" name="name" finished-at="2023-09-06T11:21:31 IST" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyMobNumber status=SUCCESS method=PBContactsDetailsVerification.verifyMobNumber()[pri:1, instance:Module1_login_Test.PBContactsDetailsVerification@42a48628] output={null}]]]>
+                <![CDATA[[TestResult name=verifyFullName status=SUCCESS method=PBLoginTest1.verifyFullName()[pri:0, instance:Module1_login_Test.PBLoginTest1@1a482e36] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- name -->
-        <test-method is-config="true" signature="loginToApp1()[pri:0, instance:Module1_login_Test.PBContactsDetailsVerification@42a48628]" started-at="2023-08-25T10:18:48 IST" name="loginToApp1" finished-at="2023-08-25T10:19:07 IST" duration-ms="19055" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginToApp1 -->
-        <test-method signature="verifyEmail()[pri:2, instance:Module1_login_Test.PBContactsDetailsVerification@42a48628]" started-at="2023-08-25T10:19:07 IST" name="verifyEmail" finished-at="2023-08-25T10:19:13 IST" duration-ms="5176" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyEmail -->
-        <test-method is-config="true" signature="name(org.testng.ITestResult)[pri:0, instance:Module1_login_Test.PBContactsDetailsVerification@42a48628]" started-at="2023-08-25T10:19:13 IST" name="name" finished-at="2023-08-25T10:19:18 IST" duration-ms="5118" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyEmail status=SUCCESS method=PBContactsDetailsVerification.verifyEmail()[pri:2, instance:Module1_login_Test.PBContactsDetailsVerification@42a48628] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- name -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Module1_login_Test.PBContactsDetailsVerification@42a48628]" started-at="2023-08-25T10:19:18 IST" name="closeBrowser" finished-at="2023-08-25T10:19:18 IST" duration-ms="710" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Module1_login_Test.PBLoginTest1@1a482e36]" started-at="2023-09-06T11:21:31 IST" name="closeBrowser" finished-at="2023-09-06T11:21:32 IST" duration-ms="466" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="clean()[pri:0, instance:Module1_login_Test.PBContactsDetailsVerification@42a48628]" started-at="2023-08-25T10:19:18 IST" name="clean" finished-at="2023-08-25T10:19:18 IST" duration-ms="25" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clean -->
-      </class> <!-- Module1_login_Test.PBContactsDetailsVerification -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- Module1_login_Test.PBLoginTest1 -->
+    </test> <!-- Module1 -->
+  </suite> <!-- RegressionSuite -->
 </testng-results>

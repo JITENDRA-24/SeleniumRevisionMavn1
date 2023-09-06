@@ -12,12 +12,12 @@
     </classes>
   </test> <!-- Test -->
   
-  <!-- Test
+  <!-- Test 
   <test  name="Module2">
     <classes>
       <class name="Module1_login_Test.PBContactsDetailsVerification"/>
     </classes>
-  </test>  --> <!-- Test --> 
+  </test>  Test --> 
     
    
   

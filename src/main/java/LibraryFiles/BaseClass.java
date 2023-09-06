@@ -5,6 +5,7 @@ import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 public class BaseClass 
 {
@@ -13,7 +14,10 @@ public class BaseClass
 	
 	public void initializeBrowser() throws IOException 
 	{	
-		driver=new ChromeDriver();
+		ChromeOptions op = new ChromeOptions();
+		op.addArguments("--disable-notifications");
+		
+		driver=new ChromeDriver(op);
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.get(UtilityClass.getPFData("URL"));
